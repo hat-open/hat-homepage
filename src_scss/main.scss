@@ -1,0 +1,52 @@
+@import './_color';
+
+html, body {
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+body {
+    max-width: 960px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+code, pre {
+    font-family: monospace;
+}
+
+pre {
+    background-color: $color-grey-300;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+h1, h2 {
+    font-size: 14pt;
+}
+
+.warning {
+    background-color: $color-grey-300;
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+        & > * {
+            padding-left: 0.5em;
+            white-space: nowrap;
+        }
+    }
+}
+
+footer {
+    margin-top: 1em;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+
