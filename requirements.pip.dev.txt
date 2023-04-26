@@ -1,2 +1,2 @@
-hat-doit ~= 0.11.3
-mako >= 1.2.0
+hat-doit ~= 0.12.5
+mako >= 1.2.4

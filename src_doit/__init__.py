@@ -13,7 +13,7 @@ __all__ = ['task_clean_all',
            'task_html',
            'task_sass',
            'task_static',
-           'task_deps']
+           'task_node_modules']
 
 
 build_dir = Path('build')
@@ -49,7 +49,7 @@ def task_sass():
         yield {'name': str(dst_path),
                'actions': [(_build_scss, [src_path, dst_path])],
                'targets': [dst_path],
-               'task_dep': ['deps']}
+               'task_dep': ['node_modules']}
 
 
 def task_static():
@@ -62,8 +62,8 @@ def task_static():
                'targets': [dst_path]}
 
 
-def task_deps():
-    """Install dependencies"""
+def task_node_modules():
+    """Install node_modules"""
     return {'actions': ['yarn install --silent']}
 
 
