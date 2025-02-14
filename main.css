@@ -1,4 +1,16 @@
-@import './_color';
+
+:root {
+    --color-grey-50: #FAFAFA;
+    --color-grey-100: #F5F5F5;
+    --color-grey-200: #EEEEEE;
+    --color-grey-300: #E0E0E0;
+    --color-grey-400: #BDBDBD;
+    --color-grey-500: #9E9E9E;
+    --color-grey-600: #757575;
+    --color-grey-700: #616161;
+    --color-grey-800: #424242;
+    --color-grey-900: #212121;
+}
 
 html, body {
     font-family: sans-serif;
@@ -15,7 +27,7 @@ code, pre {
 }
 
 pre {
-    background-color: $color-grey-300;
+    background-color: var(--color-grey-300);
     padding: 0.5em;
     margin: 0.5em;
 }
@@ -42,5 +54,3 @@ footer {
     font-size: 0.75em;
     text-align: center;
 }
-
-
